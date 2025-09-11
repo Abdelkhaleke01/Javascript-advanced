@@ -10,6 +10,8 @@ const gevondenGetal = /* jouw code hier */
 console.log('Eerste getal > 50:', gevondenGetal);
 
 // TODO: Zoek de index van het eerste getal groter dan 50
-const gevondenIndex = /* jouw code hier */
+const gevondenIndex = ['rood', 'groen', 'blauw'];
+const index = kleuren.findIndex(kleur => kleur === 'groen');
+console.log(index); // 1
 
 console.log('Index van eerste getal > 50:', gevondenIndex);

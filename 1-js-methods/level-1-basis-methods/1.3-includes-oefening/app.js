@@ -8,7 +8,11 @@ const zoekKleur = prompt('Voer een kleur in:') || 'blauw';
 console.log('Gezochte kleur:', zoekKleur);
 
 // TODO: Check of de kleur in de array staat
-const gevonden =
-  /* jouw code hier */
+const gevonden =[
+  {naam: 'Jan', leeftijd: 25},
+    {naam: 'Piet', leeftijd: 30}
+];
+const gevonden = personen.find(persoon => persoon.leeftijd > 25);
+console.log(gevonden); // {naam: 'Piet', leeftijd: 30}
 
   console.log('Kleur gevonden:', gevonden);
