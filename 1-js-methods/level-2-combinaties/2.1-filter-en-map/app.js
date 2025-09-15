@@ -8,10 +8,10 @@ console.log('Alle prijzen:', prijzen);
 console.log('Alle productnamen:', productnamen);
 
 // TODO: Filter prijzen onder de €100
-const goedkopePrijzen = /* jouw code hier */
+const goedkopePrijzen = const goedkopePrijzen = prijzen.filter(prijs => prijs < 100);
 console.log('Prijzen onder €100:', goedkopePrijzen);
 
 // TODO: Filter productnamen die beginnen met 'm'
-const productenMetM = /* jouw code hier */
+const productenMetM = producten.filter(product => product.toLowerCase().startsWith("m"));
 console.log('Producten die beginnen met m:', productenMetM);
 
