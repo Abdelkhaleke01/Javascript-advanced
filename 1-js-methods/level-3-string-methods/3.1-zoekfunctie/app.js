@@ -6,7 +6,7 @@ console.log('Alle films:', films);
 
 function zoekFilms(films, zoekterm) {
     // TODO: Return films die de zoekterm bevatten
-    return /* jouw code hier */;
+    return films.includes(zoekterm.toLowerCase())
 }
 
 // Test de functie
