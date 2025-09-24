@@ -1,15 +1,18 @@
  
-
-// Maak een array genaamd 'marvels' en plaats hier 4 Marvel films in.let cijfers = [1, 2, 3, 4, 5];
-let marvels = ["avengers", "age of ultron", "spidermanhomecoming" , "spidermanfarfromhome" , "infitywar"];
-
+// Maak een array genaamd 'marvels' en plaats hier 4 Marvel films in.
+let marvels = ["Avengers", "Age of Ultron", "Spider-Man: Homecoming", "Spider-Man: Far From Home"];
 
 // Maak een arrow function genaamd 'addMarvel'
-const functieNaam = (parameters) => {
-  // codeblok
-  return resultaat;
+const addMarvel = (film) => {
+  // Voeg nieuwe film toe aan de array
+  marvels.push(film);
+  return marvels;
 };
 
-// In je functie voeg je een nieuwe Marvel film toe zonder dit zelf in de bovenstaande array toe te voegen
-// Roep de functie op (het klopt dat je nog niets ziet)
-// Loop met een for/of loop door de array en toon alle items in de array in je console
+// Roep de functie op (voeg bijvoorbeeld Infinity War toe)
+addMarvel("Infinity War");
+
+// Loop met een for/of loop door de array en toon alle items in de console
+for (let film of marvels) {
+  console.log(film);
+}

@@ -1,25 +1,59 @@
-// Stap 1
+// Create a person object
+const person = {
+  name: "John Doe",
+  age: 30,
+  birthDate: "1995-06-15",
+  gender: "Male",
+  alive: true,
+  hobbies: ["Reading", "Gaming", "Traveling", "Cooking"],
 
-// Maak een persoon object waar je allemaal eigenschappen van een persoon in kunt opslaan en tonen op het scherm.
+  // Methods
+  changeName: function(newName) {
+    this.name = newName;
+    showPerson();
+  },
+  changeAlive: function(status) {
+    this.alive = status;
+    showPerson();
+  },
+  addHobby: function(hobby) {
+    this.hobbies.push(hobby);
+    showPerson();
+  }
+};
 
-// Het object moet de volgende properties bevatten:
+// Select the output container
+const output = document.querySelector(".output");
 
-//     Naam: de naam van de persoon (string)
-//     Leeftijd: de leeftijd van de persoon (number)
-//     Geboortedatum: de geboortedatum van de persoon (string)
-//     Geslacht: het geslacht van de persoon (string)
-//     In leven: geef aan of de persoon nog leeft (boolean)
-//     Hobby’s: 4 hobby’s van de persoon (array)
+// Function to show the person on the screen
+function showPerson() {
+  output.innerHTML = ""; // clear first
 
-// Toon elke property op het scherm door het in een p-tag te plaatsen. Hiervoor gebruik je de div-tag van de vorige opdracht.
-// Stap 2:
+  // Loop through properties
+  for (let key in person) {
+    if (typeof person[key] !== "function") {
+      const p = document.createElement("p");
 
-// Het object moet ook de volgende methods bevatten:
+      if (Array.isArray(person[key])) {
+        p.textContent = `${capitalize(key)}: ${person[key].join(", ")}`;
+      } else {
+        p.textContent = `${capitalize(key)}: ${person[key]}`;
+      }
 
-//     Een method (functie) die de naam moet veranderen. De naam moet je via de parameters kunnen meegeven.
-//     Een method (functie) die het ‘in leven’ property kan veranderen.
-//     Een method (functie) die een extra hobby toevoegt aan de array. Een hobby moet je via de parameters kunnen meegeven.
+      output.appendChild(p);
+    }
+  }
+}
 
-// Toon de wijzigingen op het scherm.
+// Helper: capitalize first letter
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
-// Gebruik geen arrow function in een object!
+// First render
+showPerson();
+
+// Example usage:
+person.changeName("Jane Smith");
+person.changeAlive(false);
+person.addHobby("Painting");
