@@ -1,0 +1,28 @@
+[
+    {
+    "naam": "bertie yates",
+    "leeftijd": "29",
+    "afbeelding": "./img/Bertie.jpg"
+    },
+     {
+    "naam": "hester hogan",
+    "leeftijd": "32",
+    "afbeelding": "./img/Hester.jpg"
+    },
+     {
+    "naam": "larie little",
+    "leeftijd": "36 ",
+    "afbeelding": "./img/Larrie.jpg"
+    },
+     {
+    "naam": "sean walsh",
+    "leeftijd": "34",
+    "afbeelding": "./img/lola.jpg"
+    },
+     {
+    "naam": "lola gardner",
+    "leeftijd": "28",
+    "afbeelding": "./img/sean.jpg"
+    }
+
+]
