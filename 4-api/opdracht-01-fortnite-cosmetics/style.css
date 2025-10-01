@@ -1,0 +1,60 @@
+body {
+  font-family: 'Burbank Big Condensed', 'Arial Black', sans-serif;
+  background: linear-gradient(135deg, #3b0066, #0d47a1, #1e88e5);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+ 
+h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffcc00;
+  text-shadow: 3px 3px 0 #000, -2px -2px 0 #1e88e5;
+}
+ 
+#cosmetics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+ 
+.card {
+  background: linear-gradient(145deg, #222, #333);
+  border: 3px solid #00e5ff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0, 229, 255, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+ 
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(255, 0, 255, 0.7);
+}
+ 
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ff00ff;
+  margin-bottom: 10px;
+}
+ 
+.card h2 {
+  font-size: 1.4rem;
+  margin: 10px 0 5px;
+  color: #00e5ff;
+  text-shadow: 2px 2px 0 #000;
+}
+ 
+.card p {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #ffccff;
+}
+ 
